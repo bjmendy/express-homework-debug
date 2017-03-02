@@ -3,15 +3,11 @@ var express = require('express'),
     server  = require('http').createServer(app);
 
 
-
-
   app.get('/', function(request, response){
     // request object is from the client,
     // the response is what were sending back
-    response.send('Hey I the server finally works')
+    response.send('awwwwwww yeaaaaaaaahhh boiiiiiie')
   })
-
-
 
 // first argument is the port number
 server.listen(5000, function(){

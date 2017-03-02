@@ -10,10 +10,11 @@ gulp.task('watch', function(){
   // second argument is an array of tasks to run
   // * is telling gulp to watch every file
   // in the folder with an extension of .less
-  gulp.watch(['./styles/*.less'], ['compillle-less'])
+  gulp.watch(['./styles/*.less'], ['compile-less'])
 })
 
 gulp.task('compile-less', function(){
+  console.log('the compile-less task is running')
   // ./ starts you at the same level as whatever
   // file you are in
   gulp.src('./styles/style.less')
@@ -24,7 +25,7 @@ gulp.task('compile-less', function(){
 
 // default task we are not making up the
 // default name, second arg is an array of tasks to be run
-gulp.task('default', ['compile-less', 'watch'])
+gulp.task('default', ['compile-less'], ['./styles/*.less'])
 
 
 

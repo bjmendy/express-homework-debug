@@ -1,0 +1,6 @@
+app.set('view engine', 'handlebars');
+
+app.get('/', function(request, response){
+	console.log("yoooo we got a visiter!!");
+	response.send({id: 1, type: "Baby Otter", name: "Clarence"});
+});

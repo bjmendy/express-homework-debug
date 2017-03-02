@@ -1,0 +1,5 @@
+app.set('view engine', 'handlebars');
+
+app.get('/seaurchin', function(request, response){
+	response.send({id: 2, type: "Lil Urchin", name: "Pheobe"});
+});
